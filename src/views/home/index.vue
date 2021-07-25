@@ -9,6 +9,7 @@
         type="info"
         round
         size="small"
+        to="/search"
         >搜索
       </van-button>
     </van-nav-bar>
@@ -72,7 +73,7 @@ export default {
       // 用户频道列表
       channels: [],
       // 控制弹出层是否弹出
-      isChannelEditShow: true,
+      isChannelEditShow: false,
     };
   },
   computed: {
