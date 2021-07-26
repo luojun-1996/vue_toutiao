@@ -1,7 +1,7 @@
 <template>
   <div class="home_container">
     <!-- NavBar导航栏部分start -->
-    <van-nav-bar>
+    <van-nav-bar class="app-nav-bar">
       <van-button
         slot="title"
         class="search_btn"

@@ -1,7 +1,12 @@
 <template>
   <div class="login_container">
     <!-- NavBar导航栏部分start -->
-    <van-nav-bar title="注册 / 登录" left-arrow @click-left="$router.back()" />
+    <van-nav-bar
+      class="app-nav-bar"
+      title="注册 / 登录"
+      left-arrow
+      @click-left="$router.back()"
+    />
     <!-- NavBar导航栏部分end -->
 
     <!-- 表单登录部分 start -->

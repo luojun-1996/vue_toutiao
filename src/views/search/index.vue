@@ -5,6 +5,7 @@
       <van-search
         v-model="searchText"
         show-action
+        background="#3296fa"
         placeholder="请输入搜索关键词"
         @search="onSearch(searchText)"
         @cancel="$router.back()"
@@ -102,5 +103,4 @@ export default {
 };
 </script>
 
-<style scoped lang="less">
-</style>
+<style scoped lang="less"></style>

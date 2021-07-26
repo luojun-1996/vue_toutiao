@@ -12,7 +12,9 @@
           :src="currentUser.photo"
         />
         <div class="name" slot="title">{{ currentUser.name }}</div>
-        <van-button class="update_btn" size="small" round>编辑资料</van-button>
+        <van-button class="update_btn" size="small" round to="/user/profile"
+          >编辑资料</van-button
+        >
       </van-cell>
 
       <!-- 第二行 用户数据 Grid宫格 -->
