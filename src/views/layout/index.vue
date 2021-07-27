@@ -1,7 +1,10 @@
 <template>
   <div class="layout_container">
     <!-- 路由出口 start -->
-    <router-view></router-view>
+    <keep-alive>
+      <router-view />
+    </keep-alive>
+
     <!-- 路由出口 end -->
 
     <!-- 底部导航栏 start -->
@@ -17,11 +20,15 @@
 
 <script>
 export default {
+  name: "layoutIndex",
   props: {},
   data() {
     return {
       active: 0,
     };
+  },
+  mounted() {
+    this.$store.commit("addCachePage", "layoutIndex");
   },
   methods: {},
   components: {},

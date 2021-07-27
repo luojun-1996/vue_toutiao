@@ -97,6 +97,7 @@ import UpdateBirthday from "./components/update-birthday.vue";
 import UpdatePhoto from "./components/update-photo.vue";
 
 export default {
+  name: "userProfileIndex",
   props: {},
   data() {
     return {

@@ -17,6 +17,7 @@ import "cropperjs/dist/cropper.css";
 import Cropper from "cropperjs";
 
 export default {
+  name: "updatePhoto",
   props: {
     file: {
       //   type: Object,

@@ -19,6 +19,7 @@
 import { getSearchResults } from "@/api/search";
 
 export default {
+  name: "searchResult",
   props: {
     searchText: {
       type: String,

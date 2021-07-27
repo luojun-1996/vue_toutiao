@@ -17,6 +17,7 @@ import { updteUserProfile } from "@/api/user";
 import dayjs from "dayjs";
 
 export default {
+  name: "updateBirthday",
   props: {
     value: {
       type: String,

@@ -28,6 +28,7 @@
 import { updteUserProfile } from "@/api/user";
 
 export default {
+  name: "updateName",
   props: {
     value: {
       type: String,

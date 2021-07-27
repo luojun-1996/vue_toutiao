@@ -16,6 +16,7 @@ import { getSearchSuggestions } from "@/api/search.js";
 import { debounce } from "lodash";
 
 export default {
+  name: "searchSuggestion",
   props: {
     searchText: {
       type: String,

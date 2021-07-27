@@ -15,6 +15,7 @@
 import { updteUserProfile } from "@/api/user";
 
 export default {
+  name: "updateGender",
   props: {
     value: {
       type: Number,

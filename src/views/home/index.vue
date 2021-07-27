@@ -66,6 +66,7 @@ import { mapState } from "vuex";
 import { getItem } from "@/utils/storage";
 
 export default {
+  name: "homeIndex",
   props: {},
   data() {
     return {

@@ -41,6 +41,7 @@ import CommentList from "./comment-list.vue";
 import PostComment from "./post-comment.vue";
 
 export default {
+  name: "commentReply",
   props: {
     comment: {
       type: Object,

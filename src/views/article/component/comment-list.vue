@@ -22,6 +22,7 @@ import { getComments } from "@/api/comment";
 import CommentItem from "./comment-item.vue";
 
 export default {
+  name: "commentList",
   props: {
     source: {
       type: [String, Number, Object],

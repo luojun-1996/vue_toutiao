@@ -75,6 +75,7 @@
 import { login, sendSms } from "@/api/user.js";
 
 export default {
+  name: "loginIndex",
   props: {},
   data() {
     return {
@@ -119,8 +120,12 @@ export default {
         // 将后端返回的用户登录状态（token等数据）放到 Vuex 容器中
         this.$store.commit("setUser", data.data);
 
+        // 清楚 layout 缓存，重新渲染
+        this.$store.commit("removeCachePage", "layoutIndex");
+
         // 登录成功，跳转到客户信息页面
-        this.$router.back();
+        // this.$router.back();
+        this.$router.push(this.$route.query.redirect || "/");
       } catch (err) {
         // console.log(err);
         this.$toast.fail("登录失败,手机号或验证码错误");

@@ -41,6 +41,7 @@
 import { addCommentLike, deleteCommentLike } from "@/api/comment";
 
 export default {
+  name: "commentItem",
   props: {
     comment: {
       type: Object,

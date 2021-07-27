@@ -25,6 +25,7 @@
 import { addComment } from "@/api/comment";
 
 export default {
+  name: "postComment",
   props: {
     target: {
       type: [Number, String, Object],

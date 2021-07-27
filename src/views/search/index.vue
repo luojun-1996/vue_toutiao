@@ -42,6 +42,7 @@ import { getSearchHistories } from "../../api/search";
 import { mapState } from "vuex";
 
 export default {
+  name: "searchIndex",
   props: {},
   data() {
     return {

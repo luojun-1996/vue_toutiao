@@ -53,6 +53,7 @@ import { mapState } from "vuex";
 import { setItem } from "@/utils/storage";
 
 export default {
+  name: "channelEdit",
   props: {
     userChannels: {
       type: Array,

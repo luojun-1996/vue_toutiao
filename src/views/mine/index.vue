@@ -48,7 +48,16 @@
 
     <!-- 未登录走这个 -->
     <div v-else class="not_login">
-      <div @click="$router.push('/login')">
+      <div
+        @click="
+          $router.push({
+            name: 'login',
+            query: {
+              redirect: '/mine',
+            },
+          })
+        "
+      >
         <img class="mobile" src="./shouji.png" alt="" />
       </div>
       <div class="text">登录 / 注册</div>
@@ -72,7 +81,7 @@
 
     <!-- 消息通知和小智同学 -->
     <van-cell title="消息通知" is-link to="" />
-    <van-cell title="小智同学" is-link to="" />
+    <van-cell title="小智同学" is-link to="/user/chat" />
 
     <!-- 退出登录 -->
     <van-cell
@@ -89,6 +98,7 @@ import { mapState } from "vuex";
 import { getCurrentUser } from "@/api/user";
 
 export default {
+  name: "mineIndex",
   props: {},
   data() {
     return {

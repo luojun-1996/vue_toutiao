@@ -24,6 +24,7 @@
 // import { setItem, getItem } from "@/utils/storage";
 
 export default {
+  name: "searchHistory",
   props: {
     searchHistories: {
       type: Array,
