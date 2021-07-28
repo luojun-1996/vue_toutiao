@@ -71,16 +71,16 @@ export default {
       },
     });
     this.socket = socket;
-    socket.on("connect", () => {
+    socket.on('connect', () => {
       console.log("连接建立成功");
     });
     socket.on("disconnect", () => {
-      console.log("链接断开了");
+      console.log("链接断开了")
     });
     // 监听 message 事件，接受服务端消息
     socket.on("message", (data) => {
       this.messages.push(data);
-    });
+    })
   },
   mounted() {
     this.scrollToBottom();
